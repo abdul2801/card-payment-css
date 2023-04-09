@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="input.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.js"
+      integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.payment/3.0.0/jquery.payment.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <div class="card" onclick="">
+      <div class="inner">
+          <div class="front">
+              <div class="flex ">
+                  <img src="https://i.ibb.co/G9pDnYJ/chip.png" height="50px" alt="chip">
+                  <img src="https://i.ibb.co/Gnnzsxd/visa-logo-png-2013.png"  height="30px" alt="logo-visa">
+              </div>
+              <div class="flex f-c">
+                  <div id="no" class="c-no">XXXX XXXX XXXX XXXX</div>
+              </div>
+              <div class="flex">
+                  <div>
+                      <div>Name</div>
+                      <div id="name" class="font">Steve Smith</div>
+                  </div>
+                  <div>
+                      <div>Valid Till</div>
+                      <div id="exp"  class="font">--/----</div>
+                  </div>
+              </div>
+          </div>
+          <div class="back">
+              <div class="b-row"></div>
+              <div class="r-cvv">
+                  <img src="https://i.ibb.co/S6JG8px/pattern.png" height="25px" width="200px" alt="pattern">
+                  <div class="cvv">000</div>
+              </div>
+              <div class="b-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum et asperiores voluptates ad eaque, amet iusto dolore est placeat officiis?
+              </div>
+          </div>
+      </div>
+  
+  </div>
+    <div class="form-container">
+      <div class="inp-container grid-span-2">
+        <input type="tel" name="c" class="input inp-no" />
+        <label class="placeholder" for="c">Card-Number</label>
+        <svg class="border-container">
+          <rect class="border-rect"></rect>
+        </svg>
+      </div>
+      <div class="inp-container">
+        <input type="tel" name="c" class="input inp-exp" />
+        <label class="placeholder" for="c">Expiry Date</label>
+        <svg class="border-container">
+          <rect class="border-rect"></rect>
+        </svg>
+      </div>
+      <div class="inp-container">
+        <input inputmode="tel" type="password" name="c" class="input inp-cvv" />
+        <label class="placeholder" for="c">Cvv</label>
+        <svg class="border-container">
+          <rect class="border-rect"></rect>
+        </svg>
+      </div>
+      <div class="inp-container grid-span-2">
+        <input type="text" name="c" maxlength="20"  class="input inp-name" />
+        <label class="placeholder" for="c">CardHolder's Name</label>
+        <svg class="border-container">
+          <rect class="border-rect"></rect>
+        </svg>
+      </div>
+      <button class="button grid-span-2" role="button">Pay Securely</button>
+    </div>
+  </div>
+  </body>
+
+  <script src="input.js"></script>
+</html>
