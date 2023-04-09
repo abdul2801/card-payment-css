@@ -241,6 +241,7 @@
 }
 .b-text {
     font-size: 0.7rem;
+    padding: 5px;
     margin-top: 10px;
     display: flex;
     text-align: center;
